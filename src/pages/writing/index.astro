@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("writing", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const topics = ["All", ...Array.from(new Set(posts.map((p) => p.data.topic)))];
+
+function readTime(body: string) {
+  const words = body.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 220));
+}
+---
+
+<BaseLayout
+  title="Writing"
+  description="Essays on AI, strategy, product, technology, and the long arc of building things."
+>
+  <section class="container-wide pt-20 md:pt-24 pb-10">
+    <p class="eyebrow mb-5">Writing</p>
+    <h1 class="text-4xl md:text-5xl leading-[1.1] tracking-tight">
+      Notes from the inside of building.
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink/80 leading-relaxed">
+      Essays on AI, product strategy, technology, and life lessons from a long
+      career. New writing roughly every few weeks.
+    </p>
+  </section>
+
+  <section class="container-wide pb-20">
+    <div
+      id="topics"
+      class="flex flex-wrap items-center gap-2 border-b border-rule pb-4 mb-2 font-sans text-sm"
+    >
+      {topics.map((t) => (
+        <button
+          type="button"
+          data-topic={t}
+          class="topic-pill px-3 py-1.5 rounded-full border border-rule text-ink hover:border-accent hover:text-accent transition-colors"
+        >
+          {t}
+        </button>
+      ))}
+    </div>
+
+    <div id="post-list">
+      {posts.map((post) => (
+        <div data-topic={post.data.topic}>
+          <ArticleCard
+            href={`/writing/${post.slug}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            topic={post.data.topic}
+            readTime={readTime(post.body)}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>(".topic-pill");
+  const items = document.querySelectorAll<HTMLElement>("#post-list > [data-topic]");
+
+  function setActive(topic: string) {
+    pills.forEach((p) => {
+      const isActive = p.dataset.topic === topic;
+      p.classList.toggle("bg-ink", isActive);
+      p.classList.toggle("text-paper", isActive);
+      p.classList.toggle("border-ink", isActive);
+    });
+    items.forEach((el) => {
+      const t = el.dataset.topic;
+      el.style.display = topic === "All" || t === topic ? "" : "none";
+    });
+  }
+
+  pills.forEach((p) => {
+    p.addEventListener("click", () => setActive(p.dataset.topic || "All"));
+  });
+
+  setActive("All");
+</script>

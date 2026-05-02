@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-paper text-ink font-serif;
+    font-feature-settings: "kern", "liga", "calt", "ss01";
+  }
+
+  ::selection {
+    background-color: #1F3A5F;
+    color: #FAFAF7;
+  }
+
+  a {
+    @apply underline decoration-rule decoration-1 underline-offset-4 transition-colors;
+  }
+  a:hover {
+    @apply decoration-accent text-accent;
+  }
+
+  /* Nav and chrome use sans */
+  nav, header, footer, button, .ui-sans {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .container-prose {
+    @apply mx-auto w-full max-w-prose px-6;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-wide px-6;
+  }
+
+  .eyebrow {
+    @apply font-sans uppercase tracking-[0.18em] text-xs text-muted;
+  }
+
+  .rule {
+    @apply border-t border-rule;
+  }
+
+  /* Prose tweaks for essay reading */
+  .prose-essay {
+    @apply prose prose-neutral max-w-none;
+    --tw-prose-body: #1A1A1A;
+    --tw-prose-headings: #1A1A1A;
+    --tw-prose-links: #1F3A5F;
+    --tw-prose-bold: #1A1A1A;
+    --tw-prose-quotes: #1A1A1A;
+    --tw-prose-quote-borders: #1F3A5F;
+    --tw-prose-code: #1A1A1A;
+    --tw-prose-hr: #E5E2DA;
+    --tw-prose-bullets: #6B6B6B;
+    --tw-prose-counters: #6B6B6B;
+  }
+  .prose-essay h1,
+  .prose-essay h2,
+  .prose-essay h3,
+  .prose-essay h4,
+  .prose-essay p,
+  .prose-essay li,
+  .prose-essay blockquote {
+    font-family: theme(fontFamily.serif);
+  }
+  .prose-essay h2 {
+    @apply mt-12 text-[1.6rem] leading-snug;
+  }
+  .prose-essay h3 {
+    @apply mt-10 text-[1.25rem] leading-snug;
+  }
+  .prose-essay p {
+    @apply leading-[1.75];
+  }
+  .prose-essay a {
+    @apply decoration-rule;
+  }
+  .prose-essay a:hover {
+    @apply decoration-accent;
+  }
+  .prose-essay code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    @apply text-[0.92em];
+  }
+  .prose-essay pre {
+    @apply rounded-md border border-rule bg-white;
+  }
+  .prose-essay blockquote {
+    @apply not-italic;
+  }
+}

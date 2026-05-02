@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const links = [
+  {
+    label: "Email",
+    value: "priyanka@coderabbit.ai",
+    href: "mailto:priyanka@coderabbit.ai",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/priyanka-kukreja",
+    href: "https://www.linkedin.com/in/priyanka-kukreja/",
+  },
+  {
+    label: "X",
+    value: "@pri_kukreja",
+    href: "https://x.com/pri_kukreja",
+  },
+  {
+    label: "GitHub",
+    value: "github.com/priyanka-kukreja",
+    href: "https://github.com/priyanka-kukreja",
+  },
+];
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with Priyanka Kukreja."
+>
+  <section class="container-prose pt-20 md:pt-24 pb-24">
+    <p class="eyebrow mb-5">Contact</p>
+    <h1 class="text-4xl md:text-5xl leading-[1.1] tracking-tight">
+      Let's talk.
+    </h1>
+    <p class="mt-6 text-lg text-ink/80 leading-relaxed">
+      I'm always glad to hear from product leaders, founders, engineers, and
+      students working on hard things. The fastest way to reach me is email.
+    </p>
+
+    <ul class="mt-12">
+      {links.map((l) => (
+        <li class="py-5 border-b border-rule grid grid-cols-12 gap-4 items-baseline">
+          <span class="col-span-12 md:col-span-3 font-sans text-sm uppercase tracking-[0.18em] text-muted">
+            {l.label}
+          </span>
+          <a
+            href={l.href}
+            target={l.href.startsWith("http") ? "_blank" : undefined}
+            rel="noopener"
+            class="col-span-12 md:col-span-9 text-xl text-ink no-underline hover:text-accent"
+          >
+            {l.value}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

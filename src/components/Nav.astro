@@ -1,0 +1,40 @@
+---
+const { pathname } = Astro.url;
+const links = [
+  { href: "/about/", label: "About" },
+  { href: "/writing/", label: "Writing" },
+  { href: "/products/", label: "Products" },
+  { href: "/contact/", label: "Contact" },
+];
+const isActive = (href: string) =>
+  href === "/"
+    ? pathname === "/"
+    : pathname === href || pathname.startsWith(href);
+---
+
+<header class="border-b border-rule">
+  <div class="container-wide flex items-center justify-between py-6">
+    <a
+      href="/"
+      class="font-sans text-sm tracking-[0.04em] text-ink no-underline hover:text-accent"
+    >
+      Priyanka Kukreja
+    </a>
+    <nav aria-label="Primary">
+      <ul class="flex items-center gap-7 text-sm">
+        {links.map((l) => (
+          <li>
+            <a
+              href={l.href}
+              class={`no-underline hover:text-accent ${
+                isActive(l.href) ? "text-accent" : "text-ink"
+              }`}
+            >
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
