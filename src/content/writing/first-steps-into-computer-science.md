@@ -3,6 +3,7 @@ title: "First steps into Computer Science"
 description: "Growing up in Ballabgarh, finding CS at BITS-Pilani, and a Microsoft summer that changed everything."
 date: 2021-06-10
 topic: Life
+draft: true
 ---
 
 I grew up in Ballabgarh, a small town in Haryana, India. My parents were hard-working entrepreneurs in the morning, and community champions in the evening. Right from the start, they instilled a deep belief to serve the people around us in every way possible. And so, ever since I was a child, I aspired to serve the community around me through my work.

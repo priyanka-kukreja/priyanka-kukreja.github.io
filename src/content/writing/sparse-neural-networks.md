@@ -3,6 +3,7 @@ title: "Sparse Neural Networks"
 description: "Why sparsity matters, how to create sparse networks, and where they shine in practice."
 date: 2022-04-18
 topic: AI
+draft: true
 ---
 
 Sparse networks refer to artificial neural networks that have a relatively low number of connections between the neurons. In contrast to dense networks, where every neuron is connected to every other neuron in the layer, sparse networks have only a fraction of those connections.

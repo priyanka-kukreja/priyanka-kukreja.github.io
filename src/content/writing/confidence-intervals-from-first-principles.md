@@ -3,6 +3,7 @@ title: "Confidence Intervals from first principles"
 description: "What confidence intervals really mean, and how to apply them to your sprawling, large-scale ML application."
 date: 2021-05-18
 topic: Technology
+draft: true
 ---
 
 You would often hear Confidence Interval thrown around casually when your

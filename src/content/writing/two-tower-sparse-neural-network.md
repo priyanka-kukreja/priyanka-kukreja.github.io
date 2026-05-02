@@ -3,6 +3,7 @@ title: "Two-tower Sparse Neural Networks"
 description: "Two towers, sparse weights, one output — and the surprising number of places this architecture earns its keep."
 date: 2022-04-21
 topic: AI
+draft: true
 ---
 
 Two-tower Sparse Neural Network (or TTSN for short) is a NN architecture that consists of two separate branches, or "towers," of layers. Each tower processes a different type of input, and the outputs from each tower are then combined in some way to produce the final output.

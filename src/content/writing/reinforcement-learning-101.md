@@ -3,6 +3,7 @@ title: "Reinforcement Learning 101"
 description: "An intuitive walk through the basics of reinforcement learning — and where the field is finding traction."
 date: 2022-04-19
 topic: AI
+draft: true
 ---
 
 Reinforcement learning is a type of machine learning that involves training an agent to interact with an environment to achieve a specific goal. Unlike supervised learning, where the agent is given labeled examples of inputs and outputs, reinforcement learning relies on feedback from the environment in the form of rewards or penalties. In this post, we explore the basics of reinforcement learning and its applications.

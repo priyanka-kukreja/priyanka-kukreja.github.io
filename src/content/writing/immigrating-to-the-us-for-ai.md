@@ -3,6 +3,7 @@ title: "Immigrating to the United States to specialize in AI"
 description: "Choosing CMU, finding my footing in a new country, and learning that the work itself is the easy part."
 date: 2021-07-19
 topic: Life
+draft: true
 ---
 
 When I was in my undergrad at BITS – Pilani, India, I viewed technology itself as the biggest game changer. But after my [internship at Microsoft](/writing/first-steps-into-computer-science/), I realized that Artificial Intelligence was going to be the next chapter in this revolution. And so, I decided to apply for higher education in the United States — the country that had made the most advancements in the field of AI. While I had admits from multiple top universities in the US, I chose Carnegie Mellon University (CMU) because it was at the cutting edge of all groundbreaking AI domains: Computer Vision, Language Technologies, Robotics, and Machine Learning.
