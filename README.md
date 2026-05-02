@@ -1,6 +1,6 @@
 # priyankakukreja.com
 
-Personal site of Priyanka Kukreja — Chief Product Officer at CodeRabbit, writing on AI, strategy, product, technology, and life.
+Personal site of Priyanka Kukreja — Product Leader at CodeRabbit, writing on AI, strategy, product, technology, and life.
 
 Built with [Astro](https://astro.build), Tailwind, and MDX. Deployed to GitHub Pages on every push to `main`, served at the custom domain `priyankakukreja.com`.
 

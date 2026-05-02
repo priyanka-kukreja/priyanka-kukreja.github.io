@@ -3,11 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const links = [
   {
-    label: "Email",
-    value: "priyanka@coderabbit.ai",
-    href: "mailto:priyanka@coderabbit.ai",
-  },
-  {
     label: "LinkedIn",
     value: "linkedin.com/in/priyanka-kukreja",
     href: "https://www.linkedin.com/in/priyanka-kukreja/",
@@ -36,7 +31,7 @@ const links = [
     </h1>
     <p class="mt-6 text-lg text-ink/80 leading-relaxed">
       I'm always glad to hear from product leaders, founders, engineers, and
-      students working on hard things. The fastest way to reach me is email.
+      students working on hard things. LinkedIn is the best way to reach me.
     </p>
 
     <ul class="mt-12">
@@ -47,7 +42,7 @@ const links = [
           </span>
           <a
             href={l.href}
-            target={l.href.startsWith("http") ? "_blank" : undefined}
+            target="_blank"
             rel="noopener"
             class="col-span-12 md:col-span-9 text-xl text-ink no-underline hover:text-accent"
           >
