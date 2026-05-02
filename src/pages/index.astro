@@ -48,22 +48,24 @@ function readTime(body: string) {
     </div>
   </section>
 
-  <section class="container-wide pb-24">
-    <div class="flex items-end justify-between mb-2 border-b border-rule pb-3">
-      <h2 class="font-sans text-sm tracking-[0.18em] uppercase text-muted">Recent Writing</h2>
-      <a href="/writing/" class="font-sans text-sm text-ink no-underline hover:text-accent">All writing →</a>
-    </div>
-    <div class="divide-rule">
-      {posts.map((post) => (
-        <ArticleCard
-          href={`/writing/${post.slug}/`}
-          title={post.data.title}
-          description={post.data.description}
-          date={post.data.date}
-          topic={post.data.topic}
-          readTime={readTime(post.body)}
-        />
-      ))}
-    </div>
-  </section>
+  {posts.length > 0 && (
+    <section class="container-wide pb-24">
+      <div class="flex items-end justify-between mb-2 border-b border-rule pb-3">
+        <h2 class="font-sans text-sm tracking-[0.18em] uppercase text-muted">Recent Writing</h2>
+        <a href="/writing/" class="font-sans text-sm text-ink no-underline hover:text-accent">All writing →</a>
+      </div>
+      <div class="divide-rule">
+        {posts.map((post) => (
+          <ArticleCard
+            href={`/writing/${post.slug}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            topic={post.data.topic}
+            readTime={readTime(post.body)}
+          />
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>
