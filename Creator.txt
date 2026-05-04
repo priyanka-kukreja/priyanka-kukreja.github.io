@@ -1,0 +1,107 @@
+================================================================================
+CREATOR REFERENCE — priyankakukreja.com
+================================================================================
+Edit this file freely. When ready, tell Claude to update the site from Creator.txt.
+================================================================================
+
+
+--------------------------------------------------------------------------------
+HOME PAGE
+--------------------------------------------------------------------------------
+
+EYEBROW
+Product Leader · CodeRabbit
+
+HEADLINE
+Redefining software development lifecycle with Agentic AI
+
+
+BIO PARAGRAPH
+
+I lead product at [CodeRabbit](https://techcrunch.com/2025/09/16/coderabbit-raises-60m-valuing-the-2-year-old-ai-code-review-startup-at-550m/), a Series-B AI developer tools startup. My team builds 0→1 products for engineers working with AI agents, compressing the path from idea to implementation from weeks to days. Previously, I was a Technical
+          Leader at Stripe and a Machine Learning Engineer at Meta. I write about technology, AI, product strategy, and the little things that bring joy and make life worth living.
+
+LINKS
+- Read the writing → /writing/
+- About me → /about/
+
+
+--------------------------------------------------------------------------------
+ABOUT PAGE
+--------------------------------------------------------------------------------
+
+HEADLINE
+Technical roots with Product mindset
+
+
+--- PARAGRAPH 1 (current role) ---
+I'm the Product Leader at CodeRabbit, where I own the success of Issue Planner (one of CodeRabbit's flagship 0→1 bets) working directly with the COO to build this category-defining product. Issue Planner is designed to redefine how engineering teams move from human intent to AI-generated code: taking a ticket, a goal, or an ambiguous instruction, and turning it into a structured, reviewable plan that an AI agent can execute.
+
+--- PARAGRAPH 2 (What I think about) ---
+The questions that keep me up: How do you take an AI capability from demo to durable product? How do you stage a 0→1 roadmap without losing the magic? What does great product leadership look like in a world where the models change every quarter? I write about these here, along with strategy, technology, and the occasional note on the long arc of a career.
+
+--- PARAGRAPH 3 (engineering background) ---
+Before product, I spent close to a decade on the engineering side. At Stripe, I led a team of engineers building financial infrastructure that moves money across borders at internet scale ($X billion each day). At Meta, I built AI-powered integrity systems tackling harmful content, fraud, and scams at massive scale. (The Indian Express profiled my work on making the virtual world safer). Earlier in my career, I worked at Microsoft on developer and cloud
+automation, and at GoDaddy on domain pricing systems.
+
+--- PARAGRAPH 4 (education) ---
+I hold a Master's in Computer Science from Carnegie Mellon University, where I specialized in Artificial Intelligence and Machine Learning. I also hold a Bachelor's in Computer Science and Master's in Economics from BITS - Pilani. This dual foundation in technology and business enables me to build products that are truly delightful to customers and shareholders alike. 
+
+
+
+
+--------------------------------------------------------------------------------
+CAREER (shown as a timeline on the About page)
+--------------------------------------------------------------------------------
+
+ROLE: Staff Product Manager
+ORG:  CodeRabbit
+ERA:  2026–Present
+NOTE: Building Issue Planner, a 0→1 product designed to take human intent and
+      generate AI-powered implementation plans. Work spans agentic AI, developer
+      workflows, prompt engineering, explainability, and the future of
+      AI-assisted software development.
+
+ROLE: Technical Leader
+ORG:  Stripe
+ERA:  Earlier
+NOTE: Led teams building the financial infrastructure that moves money across
+      borders — global payments systems at internet scale.
+
+ROLE: Engineering Leader
+ORG:  Meta
+ERA:  Earlier
+NOTE: Led AI-powered integrity systems tackling harmful content, fraud, and scams in digital communities for 3.5 billion users. Profiled by The Indian Express for this work.
+
+ROLE: Software Engineer
+ORG:  Microsoft
+ERA:  Earlier
+NOTE: Built developer and cloud automation systems.
+
+ROLE: Software Engineer
+ORG:  GoDaddy
+ERA:  Earlier
+NOTE: Worked on commerce integrity systems.
+
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+
+Carnegie Mellon University — M.S. Computer Science
+BITS - Pilani — M.S. Economics
+BITS - Pilani — B.E. Computer Science
+
+
+--------------------------------------------------------------------------------
+CORE BRAND THESIS (reference — not shown verbatim on site)
+--------------------------------------------------------------------------------
+As AI agents move from assistants to collaborators, the most important product
+challenge is no longer whether AI can generate output. It is whether humans can
+define intent, govern execution, understand decisions, and trust the systems
+they are delegating work to.
+
+
+================================================================================
+END
+================================================================================
