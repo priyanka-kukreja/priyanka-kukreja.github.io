@@ -3,9 +3,10 @@ const { pathname } = Astro.url;
 const links = [
   { href: "/about/", label: "About" },
   { href: "/writing/", label: "Writing" },
-  { href: "/products/", label: "Products" },
+  { href: "/products/", label: "Products", hidden: true },
   { href: "/contact/", label: "Contact" },
 ];
+const visibleLinks = links.filter((l) => !l.hidden);
 const isActive = (href: string) =>
   href === "/"
     ? pathname === "/"
@@ -22,7 +23,7 @@ const isActive = (href: string) =>
     </a>
     <nav aria-label="Primary">
       <ul class="flex items-center gap-7 text-sm">
-        {links.map((l) => (
+        {visibleLinks.map((l) => (
           <li>
             <a
               href={l.href}
