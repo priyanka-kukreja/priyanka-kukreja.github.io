@@ -3,34 +3,44 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const career = [
   {
-    period: "2026–Present",
+    period: "Jan 2026–Present",
     role: "Staff Product Manager",
     org: "CodeRabbit",
     note: "Building Issue Planner, a 0→1 product designed to take human intent and generate AI-powered implementation plans. Work spans agentic AI, developer workflows, prompt engineering, explainability, and the future of AI-assisted software development.",
   },
   {
-    period: "Earlier",
+    period: "Feb 2022–Dec 2025",
     role: "Technical Leader",
     org: "Stripe",
     note: "Led teams building the financial infrastructure that moves money across borders — global payments systems at internet scale.",
   },
   {
-    period: "Earlier",
+    period: "Feb 2018–Feb 2022",
     role: "Machine Learning Engineer",
     org: "Meta",
     note: "Led AI-powered integrity systems tackling harmful content, fraud, and scams in digital communities for 3.5 billion users.",
   },
   {
-    period: "Earlier",
+    period: "2017",
+    role: "Software Engineer",
+    org: "GoDaddy",
+    note: "Worked on domain auction pricing systems.",
+  },
+  {
+    period: "2016",
+    role: "Software Engineer",
+    org: "Qubole",
+  },
+  {
+    period: "2015",
     role: "Software Engineer",
     org: "Microsoft",
     note: "Built developer and cloud automation systems.",
   },
   {
-    period: "Earlier",
-    role: "Software Engineer",
-    org: "GoDaddy",
-    note: "Worked on domain auction pricing systems.",
+    period: "2014",
+    role: "Research Engineer",
+    org: "Ludwig Maximilian University",
   },
 ];
 
@@ -105,7 +115,7 @@ const education = [
             <div class="text-xl">
               {c.role} <span class="text-muted">·</span> <span class="text-accent">{c.org}</span>
             </div>
-            <p class="mt-2 text-ink/80 leading-relaxed">{c.note}</p>
+            {c.note && <p class="mt-2 text-ink/80 leading-relaxed">{c.note}</p>}
           </div>
         </li>
       ))}
