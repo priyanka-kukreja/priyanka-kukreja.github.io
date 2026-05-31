@@ -42,7 +42,7 @@ const career = [
     period: "2014",
     role: "Research Engineer",
     org: "Ludwig Maximilian University",
-    note: Modeled the super resolution plant cell nuclei images and shared the results publicly as an R package ([link](https://github.com/bioimaginggroup/bioimagetools)). 
+    note: 'Modeled the super resolution plant cell nuclei images and shared the results publicly as an R package (<a href="https://github.com/bioimaginggroup/bioimagetools" target="_blank" rel="noopener">link</a>).',
   },
 ];
 
@@ -93,7 +93,7 @@ When I crossed over to product, I didn't leave that engineering and analytical l
             <div class="text-xl">
               {c.role} <span class="text-muted">·</span> <span class="text-accent">{c.org}</span>
             </div>
-            {c.note && <p class="mt-2 text-ink/80 leading-relaxed">{c.note}</p>}
+            {c.note && <p class="mt-2 text-ink/80 leading-relaxed" set:html={c.note} />}
           </div>
         </li>
       ))}
