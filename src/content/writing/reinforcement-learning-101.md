@@ -3,8 +3,12 @@ title: "Reinforcement Learning 101"
 description: "An intuitive walk through the basics of reinforcement learning — and where the field is finding traction."
 date: 2022-04-19
 topic: AI
-draft: true
+draft: false
 ---
+### Summary
+
+Reinforcement learning is a powerful approach to machine learning that has the potential to transform many industries. By using feedback from the environment, RL algorithms can learn to optimize their strategies and achieve specific goals. As research continues to advance, we can expect to see even more innovative applications in the future.
+
 
 Reinforcement learning is a type of machine learning that involves training an agent to interact with an environment to achieve a specific goal. Unlike supervised learning, where the agent is given labeled examples of inputs and outputs, reinforcement learning relies on feedback from the environment in the form of rewards or penalties. In this post, we explore the basics of reinforcement learning and its applications.
 
@@ -30,7 +34,3 @@ Reinforcement learning has a wide range of applications across robotics, gaming,
 2. **Gaming.** AI agents that play games such as chess, Go, and poker at superhuman levels. Reinforcement learning lets these agents optimize strategies and outperform human players.
 3. **Finance.** Trading algorithms that learn to make profitable trades by adapting to changing market conditions.
 4. **Healthcare.** Personalized treatment plans for patients with chronic conditions such as diabetes and cancer, optimized to each patient's history.
-
-### Summary
-
-Reinforcement learning is a powerful approach to machine learning that has the potential to transform many industries. By using feedback from the environment, RL algorithms can learn to optimize their strategies and achieve specific goals. As research continues to advance, we can expect to see even more innovative applications in the future.

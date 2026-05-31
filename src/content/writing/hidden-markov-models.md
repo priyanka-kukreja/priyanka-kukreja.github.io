@@ -3,8 +3,12 @@ title: "Hidden Markov Models"
 description: "A technical overview of HMMs — components, inference, and the fields that lean on them."
 date: 2022-04-20
 topic: AI
-draft: true
+draft: false
 ---
+### Summary
+
+HMMs are powerful statistical models that are widely used for modeling sequential data. They provide a flexible and probabilistic framework for analyzing complex data sets and making predictions about future events.
+
 
 Hidden Markov Models (HMMs) are powerful statistical models used for modeling sequential data. They are widely used in speech recognition, natural language processing, bioinformatics, and many other fields. In this post, we provide a technical overview of HMMs — including their basic components, inference methods, and applications.
 
@@ -35,7 +39,3 @@ HMMs have a wide range of applications across many fields:
 2. **Natural language processing.** Part-of-speech tagging, named entity recognition, and machine translation.
 3. **Bioinformatics.** Modeling DNA and protein sequences and predicting properties such as secondary structure and binding affinity.
 4. **Finance.** Modeling the behavior of financial markets and predicting stock prices and other financial variables.
-
-### Summary
-
-HMMs are powerful statistical models that are widely used for modeling sequential data. They provide a flexible and probabilistic framework for analyzing complex data sets and making predictions about future events.

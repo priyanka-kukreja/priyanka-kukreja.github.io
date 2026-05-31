@@ -3,7 +3,7 @@ title: "Reinforcement Learning 201"
 description: "Going one level deeper: MDPs, value-based and policy-based methods, and the gotchas of deep RL."
 date: 2022-04-19
 topic: AI
-draft: true
+draft: false
 ---
 
 Reinforcement learning is a mathematical framework for training an agent to take actions in an environment to maximize a reward signal. The goal is to learn an optimal policy — a function that maps states to actions to maximize the cumulative reward over time.
@@ -26,13 +26,13 @@ There are two main types of reinforcement learning algorithms: model-based and m
 
 **Model-free algorithms** do not require a model of the environment and learn policies directly from experience. There are two main types of model-free algorithms: value-based and policy-based.
 
-*Value-based algorithms* try to learn the value function V<sup>π</sup>, which estimates the expected cumulative reward starting from a given state and following a certain policy π. One example is the **Q-learning** algorithm, which iteratively updates the Q-values, defined as the expected cumulative reward starting from a state-action pair, by minimizing the temporal difference error:
+**Value-based algorithms** try to learn the value function V<sup>π</sup>, which estimates the expected cumulative reward starting from a given state and following a certain policy π. One example is the **Q-learning** algorithm, which iteratively updates the Q-values, defined as the expected cumulative reward starting from a state-action pair, by minimizing the temporal difference error:
 
 > δ<sub>t</sub> = r<sub>t+1</sub> + γ max<sub>a′</sub> Q(s<sub>t+1</sub>, a′) − Q(s<sub>t</sub>, a<sub>t</sub>)
 >
 > Q(s<sub>t</sub>, a<sub>t</sub>) ← Q(s<sub>t</sub>, a<sub>t</sub>) + α · δ<sub>t</sub>
 
-*Policy-based algorithms* try to learn the policy π directly. One example is the **policy gradient** algorithm, which updates the policy parameters θ to increase the expected cumulative reward:
+**Policy-based algorithms** try to learn the policy π directly. One example is the **policy gradient** algorithm, which updates the policy parameters θ to increase the expected cumulative reward:
 
 > ∇<sub>θ</sub> J(π<sub>θ</sub>) = E<sub>π<sub>θ</sub></sub>[∇<sub>θ</sub> log π<sub>θ</sub>(s, a) · Q<sup>π</sup>(s, a)]
 >
