@@ -1,7 +1,7 @@
 ---
 title: "Reinforcement Learning 101"
 description: "An intuitive walk through the basics of reinforcement learning — and where the field is finding traction."
-date: 2022-04-19
+date: 2022-04-15
 topic: AI
 draft: false
 ---
