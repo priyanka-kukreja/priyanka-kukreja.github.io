@@ -4,7 +4,7 @@ date: 2026-05-08
 topic: Tech Industry
 draft: false
 ---
-![](/assets/posts/do-you-trust-your-ai-agent-cover.jpg)
+![](/assets/posts/do-you-trust-your-ai-agent-cover.jpeg)
 
 ### Your AI agent needs to show its homework
 

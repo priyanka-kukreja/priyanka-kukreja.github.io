@@ -4,7 +4,7 @@ date: 2026-04-26
 topic: Tech Industry
 draft: false
 ---
-
+![](/assets/posts/next-ai-startup-cover.jpeg)
 _AI is making startups boring again. And that’s a good thing._
 
 ## BLUF
