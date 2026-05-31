@@ -1,7 +1,7 @@
 ---
 title: "Your next AI startup is going to look a lot like your grandpa's hardware store"
 date: 2026-04-26
-topic: Technology
+topic: Tech Industry
 draft: false
 ---
 

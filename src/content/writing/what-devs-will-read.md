@@ -1,7 +1,7 @@
 ---
 title: "The one thing devs will still read when they stop reading code "
 date: 2026-03-15
-topic: Technology
+topic: Tech Industry
 draft: false
 ---
 
