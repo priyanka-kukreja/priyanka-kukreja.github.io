@@ -24,10 +24,10 @@
   }
 
   a {
-    @apply underline decoration-rule decoration-1 underline-offset-4 transition-colors;
+    @apply no-underline text-ink decoration-1 underline-offset-4 transition-colors;
   }
   a:hover {
-    @apply decoration-accent text-accent;
+    @apply underline decoration-accent text-accent;
   }
 
   /* Nav and chrome use sans */
@@ -57,7 +57,7 @@
     @apply prose prose-neutral max-w-none;
     --tw-prose-body: #1A1A1A;
     --tw-prose-headings: #1A1A1A;
-    --tw-prose-links: #1F3A5F;
+    --tw-prose-links: #1A1A1A;
     --tw-prose-bold: #1A1A1A;
     --tw-prose-quotes: #1A1A1A;
     --tw-prose-quote-borders: #1F3A5F;
@@ -85,10 +85,10 @@
     @apply leading-[1.75];
   }
   .prose-essay a {
-    @apply decoration-rule;
+    @apply no-underline;
   }
   .prose-essay a:hover {
-    @apply decoration-accent;
+    @apply underline decoration-accent text-accent;
   }
   .prose-essay code {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;

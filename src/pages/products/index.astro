@@ -29,7 +29,7 @@ const products = (await getCollection("products", ({ data }) => !data.draft))
           Documenting the products I build. More soon.
         </p>
         <p class="mt-6 font-sans text-sm">
-          <a href="/contact/" class="text-accent no-underline hover:underline">Get notified →</a>
+          <a href="/contact/">Get notified →</a>
         </p>
       </div>
     ) : (
@@ -56,7 +56,7 @@ const products = (await getCollection("products", ({ data }) => !data.draft))
                 </div>
               ) : null}
               {p.data.link ? (
-                <a class="mt-5 inline-block font-sans text-sm text-accent no-underline hover:underline" href={p.data.link} target="_blank" rel="noopener">Visit →</a>
+                <a class="mt-5 inline-block font-sans text-sm" href={p.data.link} target="_blank" rel="noopener">Visit →</a>
               ) : null}
             </li>
           );
