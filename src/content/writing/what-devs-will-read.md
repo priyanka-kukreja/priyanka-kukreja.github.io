@@ -5,6 +5,7 @@ topic: Tech Industry
 draft: false
 ---
 
+![](/assets/posts/what-devs-will-read-cover.jpeg)
 Code was never meant to be read. We just had no alternative.
 
 Consider a real-world example: a production payments service with layered retry logic, idempotency keys, circuit breakers, feature flags, and compliance checks woven throughout the middleware. The control flow may be technically clean and fully tested, but the intent is fragmented across conditionals, decorators, and utility abstractions. A single refund path might span five files and at least three layers of indirection.
