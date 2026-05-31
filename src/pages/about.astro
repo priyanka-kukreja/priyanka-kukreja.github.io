@@ -3,19 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const career = [
   {
-    period: "Jan 2026–Present",
+    period: "2026–Present",
     role: "Staff Product Manager",
     org: "CodeRabbit",
     note: "Building Issue Planner, a 0→1 product designed to take human intent and generate AI-powered implementation plans. Work spans agentic AI, developer workflows, prompt engineering, explainability, and the future of AI-assisted software development.",
   },
   {
-    period: "Feb 2022–Dec 2025",
+    period: "2022–2025",
     role: "Technical Leader",
     org: "Stripe",
     note: "Led teams building the financial infrastructure that moves money across borders — global payments systems at internet scale.",
   },
   {
-    period: "Feb 2018–Feb 2022",
+    period: "2018–2022",
     role: "Machine Learning Engineer",
     org: "Meta",
     note: "Led AI-powered integrity systems tackling harmful content, fraud, and scams in digital communities for 3.5 billion users.",
@@ -62,50 +62,39 @@ const education = [
     </h1>
 
     <div class="prose-essay mt-10 text-lg">
-      <p>
-        I'm the Staff Product Manager at CodeRabbit, where I own the success of Issue
-        Planner (one of CodeRabbit's flagship 0→1 bets) working directly with
-        the COO to build this category-defining product. Issue Planner is
-        designed to redefine how engineering teams move from human intent to
-        AI-generated code: taking an ambiguous instruction
-        and turning it into a structured, collaborative plan that an AI agent can
-        execute.
-      </p>
-      <p>
-        Before product, I spent close to a decade on the engineering side. 
-        
-        At <strong>Stripe</strong>, I led a team of engineers building financial
-        payments infrastructure that moves money across borders at internet scale. At
-        <strong>Meta</strong>, I built AI-powered integrity systems tackling
-        harmful content (such as fraud and scams) at planet scale. Earlier in my
-        career, I worked at <strong>Microsoft</strong> on developer and cloud
-        automation, and at <strong>GoDaddy</strong> on domain pricing systems.
-      </p>
-      <p>
-        I hold a Master's in Computer Science from
-        <strong>Carnegie Mellon University</strong>, where I specialized in
-        Artificial Intelligence and Machine Learning. I also hold a Bachelor's
-        in Computer Science and Master's in Economics from
-        <strong>BITS - Pilani</strong>. This dual foundation in technology and
-        business enables me to build products that are truly delightful to
-        customers and shareholders alike.
-      </p>
 
-      <h2>What I think about</h2>
-      <p>
-        The questions that keep me up: How do you take an AI capability from
-        demo to durable product? How do you stage a 0→1 roadmap without losing
-        the magic? What does great product leadership look like in a world where
-        the models change every quarter? I write about these here, along with
-        strategy, technology, and the occasional note on the long arc of a
-        career.
-      </p>
+<p>
+Most AI products fail not because the model wasn't good enough. They fail because no one designed the product layer with enough rigor — the intent capture, the trust mechanics, the human-AI handoff. I've watched this from both sides.
+</p>
+
+<p>
+I spent nearly a decade as an engineer building AI systems before they were called agentic: integrity systems at Meta tackling fraud and harmful content for 3.5 billion users, and financial infrastructure at Stripe moving money across borders at internet scale. When I crossed over to product, I didn't leave that engineering lens behind. I gave it a job.
+</p>
+
+<p>
+Today I lead product for Issue Planner at CodeRabbit — a 0→1 bet on the hardest problem in AI-assisted development: taking a human's ambiguous intent and turning it into a structured plan an AI agent can execute. It's the gap I spent a decade watching teams fall into. Now I'm building the bridge.
+</p>
+
+
+<p>
+Most AI products don't fail because the model wasn't good enough. They fail because the product layer was not designed with enough rigor — the intent capture, the trust mechanics, the human-AI handoff. I've watched this from both sides.
+</p>
+<p>
+I spent nearly a decade as an engineer building AI systems before they were called agentic: integrity systems at Meta tackling fraud and harmful content for 3.5 billion users, and financial infrastructure at Stripe moving money across borders at internet scale. Earlier in my career, I built cloud automation systems at Microsoft and pricing infrastructure at GoDaddy.
+</p>
+<p>
+That engineering foundation was built on a deliberate educational bet: a Master's in Computer Science from Carnegie Mellon, specializing in AI and Machine Learning, on top of degrees in Computer Science and Economics from BITS Pilani. The economics degree is what taught me that systems have incentives, and that products fail when the incentive structure isn't designed as carefully as the architecture.
+</p>
+<p>
+When I crossed over to product, I didn't leave that engineering and analytical lens behind. Today I lead product for Issue Planner at CodeRabbit — a 0→1 bet on the hardest problem in AI-assisted development: taking a human's ambiguous intent and turning it into a structured plan an AI agent can execute.
+</p>
+
     </div>
   </section>
 
   <section class="container-prose pb-20">
     <h2 class="font-sans text-sm tracking-[0.18em] uppercase text-muted border-b border-rule pb-3 mb-2">
-      Selected Career
+      Career
     </h2>
     <ul>
       {career.map((c) => (
