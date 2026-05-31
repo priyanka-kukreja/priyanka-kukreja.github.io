@@ -2,7 +2,7 @@
 title: "Women in Tech"
 description: "Seven things I'd tell anyone — but especially women — early in their tech career."
 date: 2022-04-21
-topic: Strategy
+topic: Life
 draft: false
 ---
 
