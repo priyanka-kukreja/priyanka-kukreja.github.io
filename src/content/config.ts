@@ -6,7 +6,7 @@ const writing = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     date: z.coerce.date(),
-    topic: z.enum(["AI", "Strategy", "Product", "Technology", "Life"]),
+    topic: z.enum(["AI", "Strategy", "Product", "Technology", "Tech Industry", "Life"]),
     draft: z.boolean().default(false),
   }),
 });
