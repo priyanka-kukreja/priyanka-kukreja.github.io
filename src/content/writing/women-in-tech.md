@@ -3,7 +3,7 @@ title: "Women in Tech"
 description: "Seven things I'd tell anyone — but especially women — early in their tech career."
 date: 2022-04-21
 topic: Strategy
-draft: true
+draft: false
 ---
 
 Women have made significant strides in the technology industry over the years, but they still face challenges and barriers to success. As a woman who has spent her career in technology, here are seven things I'd offer to anyone navigating this path.
@@ -36,4 +36,4 @@ You have the power to advocate for diversity and inclusion in your workplace and
 
 The tech industry can be challenging, but don't let setbacks discourage you. Stay resilient, persevere through challenges, and learn from your mistakes. Your determination and resilience will help you achieve your goals.
 
-Finally, always remember — the first person who has to believe in your success is *you*.
+Finally, always remember — the first person who has to believe in your success is **you**.

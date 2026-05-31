@@ -3,7 +3,7 @@ title: "Model-Weighted Sampling"
 description: "Why some samples should count more than others — and what that buys you in integrity systems."
 date: 2022-04-22
 topic: AI
-draft: true
+draft: false
 ---
 
 Model-weighted sampling is a technique used in ML to generate diverse and representative samples from a dataset. It involves using a probability distribution to weight the selection of samples from the dataset during training. The weights are based on the relative importance of each sample to the overall performance of the model.

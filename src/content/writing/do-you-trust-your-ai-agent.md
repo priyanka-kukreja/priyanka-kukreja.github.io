@@ -132,4 +132,4 @@ A few years from now, we will reflect back on what made certain products more su
 
 As the foundational models head towards commoditization, the true differentiator would be how deeply a product can build a bond with the user. Trust is the foundation of any bond, for both humans and products.
 
-![Models, eventually](/assets/posts/do-you-trust-your-ai-agent-5.jpg)
+![Models, eventually](/assets/posts/do-you-trust-your-ai-agent-5.png)
