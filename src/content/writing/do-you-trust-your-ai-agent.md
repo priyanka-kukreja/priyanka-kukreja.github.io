@@ -4,6 +4,8 @@ date: 2026-05-08
 topic: Technology
 draft: false
 ---
+![](/assets/posts/do-you-trust-your-ai-agent-cover.jpg)
+
 ### Your AI agent needs to show its homework
 
 > Explainability is what determines whether an AI Agent gets deployed to solve real-world problems, or remains a sidekick on non-critical enterprise tasks.
