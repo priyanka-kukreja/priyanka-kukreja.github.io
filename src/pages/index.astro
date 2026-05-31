@@ -3,9 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("writing", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 4);
+const sortedPosts = (await getCollection("writing", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const oneYearAgo = new Date();
+oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+const hasRecentPost =
+  sortedPosts.length > 0 && sortedPosts[0].data.date >= oneYearAgo;
+const posts = hasRecentPost ? sortedPosts.slice(0, 3) : [];
 
 function readTime(body: string) {
   const words = body.trim().split(/\s+/).length;
