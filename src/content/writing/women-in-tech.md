@@ -3,7 +3,7 @@ title: "Women in Tech"
 description: "Seven things I'd tell anyone — but especially women — early in their tech career."
 date: 2022-04-21
 topic: Life
-draft: false
+draft: true
 ---
 
 Women have made significant strides in the technology industry over the years, but they still face challenges and barriers to success. As a woman who has spent her career in technology, here are seven things I'd offer to anyone navigating this path.

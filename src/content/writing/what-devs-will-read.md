@@ -67,9 +67,7 @@ The Plan is where taste lives. It’s where judgment, accountability, and collab
 
 Code will still be written, more of it than ever. But more and more of that code will be produced by systems faster than us, cheaper than us, and less interested in explaining themselves. If we want software development to remain legible, governable, and collaborative, we need a better artifact for humans to hold onto.
 
-That's what we're building with [CodeRabbit Issue Planner](https://www.coderabbit.ai/plan). It is a tool that helps teams using AI agents plan collaboratively and align intent _before_ any code is written. It turns vague issues into shared, reviewable plans and generates editable prompts with context directly from your codebase. But it also functions as a new source of truth that serves as an archive of the choices you made and systems you intended to build.
-
-It’s not a nicer prompt box or just another thin wrapper around codegen. It’s a real system of record for intent in the age of agents.
+That's what we're building with [CodeRabbit Issue Planner](https://www.coderabbit.ai/plan). It is a tool that helps teams using AI agents plan collaboratively and align intent _before_ any code is written. 
 
 Just as a poet looks to their poem as the artifact of what they built, and a chef looks to their dish. In the same way, developers previously looked to code and/or PRs as the artifact they built.
 

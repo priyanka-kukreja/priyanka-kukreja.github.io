@@ -61,7 +61,7 @@ The downside is real. Scaling is much harder. Your growth won't look like a hock
 
 ## A hundred winners, not one
 
-Instead of one billion-dollar company minting a handful of millionaires and a few billionaires, picture a hundred $10 million companies => creating a hundred ownership stories. That's a fundamentally different economic outcome - more ~founders~ business owners + more communities that benefit from a local business that actually understands them.
+Instead of one billion-dollar company minting a handful of millionaires and a few billionaires, picture a hundred $10 million companies => creating a hundred ownership stories. That's a fundamentally different economic outcome - more business owners + more communities that benefit from a local business that actually understands them.
 
 This matters enormously in the context of what's coming. If AI does displace up to 20% of the workforce - and that's not a fringe projection anymore ([source](https://www.cbsnews.com/news/anthropic-ceo-dario-amodei-warning-of-ai-potential-dangers-60-minutes-transcript/)) - the economy needs a new on-ramp for skilled workers. Historically, a 5–6% unemployment spike is enough to send the Fed scrambling and Congress into emergency mode. A jump to 20% is a civilizational event. Traditional policy tools won't be enough. What might actually help is a proliferation of businesses that are small enough to hire locally, specific enough to need domain expertise, and durable enough to outlast a model release cycle.
 
@@ -76,5 +76,3 @@ The Boomers built wealth through houses and small businesses. They transferred i
 The tools are better than they've ever been. A two-person team today can operate with the leverage of a twenty-person team from a decade ago. The opportunity isn't gone - it's just shaped differently. The TAM might have shrunk, but the potential for depth of integration is much higher.
 
 Turns out your grandpa's hardware store had some things figured out after all. He just didn't have Claude to help him write the product spec.
-
-Written for product leaders, founders, and everyone who needs to call their grandfather and apologize. Views are the author's own, fueled by one too many late nights and one conversation with [@PrudhviDpp](https://x.com/@PrudhviDpp)  who has seen the same data as everyone else and somehow chose optimism anyway.

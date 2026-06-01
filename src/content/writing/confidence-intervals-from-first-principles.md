@@ -3,7 +3,7 @@ title: "Confidence Intervals from first principles"
 description: "What confidence intervals really mean, and how to apply them to your sprawling, large-scale ML application."
 date: 2021-05-18
 topic: AI
-draft: false
+draft: true
 ---
 ## BLUF
 1. We cannot compute the population parameter directly, and hence we need to estimate them. But this number will vary from sample to sample. This is what Confidence Interval tells us: if I were to take repeated samples, 95% of the time the estimate for the population param would lie between A to B. That is, for every 100 samples we collect from data, 95 of them will have their mean in the given range and 5 will not.
