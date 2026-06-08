@@ -49,6 +49,13 @@ const talks = [
     date: new Date("2026-05-13"),
     href: "https://x.com/coderabbitai/status/2054606085839901135",
   },
+  {
+    title: "CodeRabbit Review: the AI-native code review interface",
+    description:
+      "A walkthrough of CodeRabbit Review — how it turns a pull request into a guided experience that surfaces the why behind every change.",
+    source: "YouTube · CodeRabbit",
+    href: "https://www.youtube.com/watch?v=yS0EwgA2zjw",
+  },
 ];
 
 function fmt(date: Date) {
@@ -99,8 +106,12 @@ function fmt(date: Date) {
         <a href={t.href} target="_blank" rel="noopener" class="block no-underline">
           <div class="eyebrow mb-2 flex items-center gap-3">
             <span>{t.source}</span>
-            <span aria-hidden="true">·</span>
-            <time datetime={t.date.toISOString()}>{fmt(t.date)}</time>
+            {t.date && (
+              <>
+                <span aria-hidden="true">·</span>
+                <time datetime={t.date.toISOString()}>{fmt(t.date)}</time>
+              </>
+            )}
           </div>
           <h3 class="text-2xl leading-snug text-ink group-hover:text-accent transition-colors">
             {t.title}
