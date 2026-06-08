@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const articles = [
+  {
+    title: "Do you trust your AI agent?",
+    description:
+      "What is AI explainability, and why it is the key to trust and adoption for AI agents.",
+    source: "CodeRabbit Blog",
+    href: "https://www.coderabbit.ai/blog/do-you-trust-your-ai-agent",
+  },
+  {
+    title: "The one thing devs will still read when they stop reading code",
+    description:
+      "As AI agents write more of the code, the plan — not the diff — becomes the system of record.",
+    source: "CodeRabbit Blog",
+    href: "https://www.coderabbit.ai/blog/the-one-thing-devs-will-still-read-when-they-stop-reading-code",
+  },
+  {
+    title: "Atlas: the first AI-native code review interface",
+    description:
+      "For the first time in almost 20 years, reorganize the pull request into a guided walkthrough that shows the why behind a change, not just an alphabetical list of files.",
+    source: "CodeRabbit Blog",
+    href: "https://www.coderabbit.ai/blog/introducing-atlas-the-first-ai-native-code-review-interface",
+  },
+  {
+    title: "Issue Planner: Collaborative planning for teams using coding agents",
+    description:
+      "A new way for teams to shape and refine the plan inside their issue tracker, before an agent writes a single line of code.",
+    source: "CodeRabbit Blog",
+    href: "https://www.coderabbit.ai/blog/issue-planner-collaborative-planning-for-teams-with-ai-agents",
+  },
+];
+
+const talks = [
+  {
+    title: "Code review UX hasn't changed in almost 20 years",
+    description:
+      "Developers need a review experience that shows the why, not just the what — and why that's the bet we're making at CodeRabbit.",
+    source: "X · CodeRabbit",
+    date: new Date("2026-05-26"),
+    href: "https://x.com/coderabbitai/status/2059296868690235407",
+  },
+  {
+    title: "Project Atlas",
+    description:
+      "A first look at Atlas, the first AI-native code review interface, live in your pull requests today.",
+    source: "X · CodeRabbit",
+    date: new Date("2026-05-13"),
+    href: "https://x.com/coderabbitai/status/2054606085839901135",
+  },
+];
+
+function fmt(date: Date) {
+  return date.toLocaleDateString("en-US", { year: "numeric", month: "long" });
+}
+---
+
+<BaseLayout
+  title="In Public"
+  description="Articles and talks by Priyanka Kukreja on AI agents, code review, and the future of AI-assisted software development."
+>
+  <section class="container-wide pt-20 md:pt-24 pb-10">
+    <p class="eyebrow mb-5">In Public</p>
+    <h1 class="text-4xl md:text-5xl leading-[1.1] tracking-tight">
+      Ideas, out in the open.
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink/80 leading-relaxed">
+      A running collection of the writing I've published and the talks I've
+      given in the public domain — on AI agents, code review, and the future of
+      AI-assisted software development.
+    </p>
+  </section>
+
+  <section class="container-wide pb-16">
+    <h2 class="font-sans text-sm tracking-[0.18em] uppercase text-muted border-b border-rule pb-3 mb-2">
+      Articles
+    </h2>
+    {articles.map((a) => (
+      <article class="group py-7 border-b border-rule">
+        <a href={a.href} target="_blank" rel="noopener" class="block no-underline">
+          <div class="eyebrow mb-2">{a.source}</div>
+          <h3 class="text-2xl leading-snug text-ink group-hover:text-accent transition-colors">
+            {a.title}
+            <span aria-hidden="true" class="inline-block ml-1 text-muted group-hover:text-accent">↗</span>
+          </h3>
+          <p class="mt-2 text-ink/80 leading-relaxed">{a.description}</p>
+        </a>
+      </article>
+    ))}
+  </section>
+
+  <section class="container-wide pb-24">
+    <h2 class="font-sans text-sm tracking-[0.18em] uppercase text-muted border-b border-rule pb-3 mb-2">
+      Talks
+    </h2>
+    {talks.map((t) => (
+      <article class="group py-7 border-b border-rule">
+        <a href={t.href} target="_blank" rel="noopener" class="block no-underline">
+          <div class="eyebrow mb-2 flex items-center gap-3">
+            <span>{t.source}</span>
+            <span aria-hidden="true">·</span>
+            <time datetime={t.date.toISOString()}>{fmt(t.date)}</time>
+          </div>
+          <h3 class="text-2xl leading-snug text-ink group-hover:text-accent transition-colors">
+            {t.title}
+            <span aria-hidden="true" class="inline-block ml-1 text-muted group-hover:text-accent">↗</span>
+          </h3>
+          <p class="mt-2 text-ink/80 leading-relaxed">{t.description}</p>
+        </a>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

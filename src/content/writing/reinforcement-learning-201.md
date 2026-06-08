@@ -3,7 +3,7 @@ title: "Reinforcement Learning 201"
 description: "Going one level deeper: MDPs, value-based and policy-based methods, and the gotchas of deep RL."
 date: 2022-04-19
 topic: AI
-draft: false
+draft: true
 ---
 
 Reinforcement learning is a mathematical framework for training an agent to take actions in an environment to maximize a reward signal. The goal is to learn an optimal policy — a function that maps states to actions to maximize the cumulative reward over time.
